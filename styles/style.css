@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bebas+Neue&family=Lobster&family=Roboto:wght@300;400&display=swap");
+/* FONTS */
+/* Helvetica, Verdana, Arial, Cursive, Arial, Verdana, */
+/* COLORS */
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  background: #476f95;
+  color: #d1dbe4;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: #d1dbe4;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: Roboto, verdana, arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fafafa;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #476f95;
+}
+
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d1dbe4;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d1dbe4;
+  padding: 15% 0;
+}
+.summary p:last-child {
+  border-top: 1px solid #476f95;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: #d1dbe4;
+}
+
+.preamble {
+  background: rgba(255, 255, 255, 0.9);
+  color: #fafafa;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+}
+
+.intro {
+  padding: 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #d1dbe4;
+  padding: 5%;
+}
+
+body {
+  font-family: Roboto, verdana, arial, sans-serif;
+  font-size: 85%;
+  color: #fafafa;
+  background-color: #194a7a;
+  margin: 0;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */
