@@ -15,7 +15,92 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $primary;
+  // background-color: $primary;
+  background-color: white;
   margin: 0;
   padding: 1em;
+  position: relative;
+
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 25% 1fr;
+}
+
+#zen-intro {
+  grid-column: 1 / -1;
+  background-color: red;
+
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 40% 40% 20%;
+}
+
+#zen-intro > header, #zen-intro > div {
+  border: 5px solid black;
+}
+
+#zen-intro > header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+#zen-summary {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+#zen-preamble {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+#zen-supporting {
+  grid-column: 2 / -1;
+  background-color: blue;
+  border: 5px solid blue;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  // grid-template-columns: 25% 1fr;
+}
+
+#zen-supporting > div {
+  grid-column: 2 / -1;
+  background-color: teal;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+  // grid-column: 1 / -1;
+  background-color: lightblue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#zen-resources {
+  padding: 0;
+  margin: 0;
+  // grid-column: 1 / -1;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
