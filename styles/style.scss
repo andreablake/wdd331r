@@ -63,24 +63,34 @@ body {
 }
 
 #zen-supporting {
+  
   grid-column: 2 / -1;
-  background-color: blue;
-  border: 5px solid blue;
   padding: 0;
   margin: 0;
 
-  display: grid;
-  // grid-template-columns: 25% 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #zen-supporting > div {
-  grid-column: 2 / -1;
-  background-color: teal;
+  color: $text-light;
+  background-color: $accent1;
+  padding: 0 10px;
 }
 
+#zen-supporting > div > h3 {
+  text-align: center;
+}
+
+#zen-supporting > div:nth-child(odd) {
+    background-color: $accent2;
+    color: $text-dark;
+}
 footer {
   padding: 0;
   margin: 0;
+
   // grid-column: 1 / -1;
   background-color: lightblue;
   position: absolute;

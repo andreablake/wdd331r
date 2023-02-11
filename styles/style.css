@@ -154,16 +154,26 @@ body {
 
 #zen-supporting {
   grid-column: 2/-1;
-  background-color: blue;
-  border: 5px solid blue;
   padding: 0;
   margin: 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #zen-supporting > div {
-  grid-column: 2/-1;
-  background-color: teal;
+  color: #d1dbe4;
+  background-color: #476f95;
+  padding: 0 10px;
+}
+
+#zen-supporting > div > h3 {
+  text-align: center;
+}
+
+#zen-supporting > div:nth-child(odd) {
+  background-color: #7593af;
+  color: #194a7a;
 }
 
 footer {
@@ -188,6 +198,4 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
