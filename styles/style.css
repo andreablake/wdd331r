@@ -115,6 +115,15 @@ body {
   position: relative;
 }
 
+h2 {
+  animation: change-size 1s ease-out 2s;
+}
+
+@keyframes change-size {
+  100% {
+    font-size: 14px;
+  }
+}
 .page-wrapper {
   display: grid;
   grid-template-columns: 25% 1fr;
@@ -129,6 +138,11 @@ body {
   display: grid;
   grid-template-columns: 25% 1fr;
   grid-template-rows: 40% 40% 20%;
+  transition: background-color 1s ease-out;
+}
+
+#zen-intro:hover {
+  background-color: peru;
 }
 
 #zen-intro > header, #zen-intro > div {
