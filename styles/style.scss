@@ -200,5 +200,36 @@ footer {
   color: $accent2;
 }
 
+/* Footer Transition*/
+
+footer a {
+  border-bottom: 2px solid rgba(255, 255, 255, .7);
+  padding: 10px 0;
+  color: $background-color;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color .3s .15s ease-in;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: $background-color;
+  width: 0;
+  transition: width .3s ease-in;
+  z-index: -1;
+}
+
+footer a:hover {
+  color: $accent2;
+}
+
+footer a::after {
+  width: 100%;
+}
 
 
