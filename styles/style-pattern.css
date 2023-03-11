@@ -57,11 +57,6 @@ a {
   padding: 10px;
 }
 
-a:hover {
-  color: #d1dbe4;
-  background-color: #476f95;
-}
-
 * {
   box-sizing: border-box;
 }
