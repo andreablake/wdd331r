@@ -15,7 +15,6 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  // background-color: $primary;
   background-color: white;
   margin: 0;
   padding: 1em;
@@ -52,19 +51,8 @@ h2 {
 }
 
 header {
-  background-color: $primary;
-}
-
-#zen-intro {
-  // background-color: $accent2;
-}
-
-#zen-intro:hover {
-  // background-color:$grey-sidebar;
-}
-
-#zen-intro > header, #zen-intro > div {
-  // border: 5px solid black;
+  // background-color: $primary;
+  background-image: $shark;
 }
 
 #zen-intro > header {
@@ -91,11 +79,9 @@ header {
 }
 
 #zen-supporting {
-
   grid-column: 2 / -1;
   padding: 0;
   margin: 35px 0 0 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,11 +101,10 @@ header {
     background-color: $accent2;
     color: $text-dark;
 }
+
 footer {
   padding: 0;
   margin: 0;
-
-  // grid-column: 1 / -1;
   background-color: lightblue;
   position: absolute;
   bottom: 0;
@@ -127,10 +112,10 @@ footer {
   width: 100%;
 }
 
-
 .sidebar {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background-image: $octopus;
 }
 
 .sidebar > .wrapper {
@@ -140,11 +125,14 @@ footer {
 #zen-resources {
   padding: 0;
   margin: 0;
-  // grid-column: 1 / -1;
   background-color: green;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#zen-requirements {
+  background-image: $dolphin;
 }
 
 /* LINK ANIMATIONS */
