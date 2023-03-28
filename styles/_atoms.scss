@@ -30,6 +30,7 @@ h3,
 h4 {
   font-family: $fonts-headline;
   margin: 0;
+  padding: 0;
 }
 h1 {
   background: $accent1;
@@ -51,7 +52,8 @@ h3 {
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
+  // padding: 0.5em 0 0.25em 0;
+  padding: 0;
 }
 h4 {
   font-size: 1.5em;
@@ -71,7 +73,8 @@ a {
   color: $text-dark;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
-  padding: 10px;
+  // padding: 3px;
+  // background-color: $text-light;
 }
 // a:hover {
 //   color: $text-light;

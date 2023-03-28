@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bebas+Neue&family=Lobster&family=Roboto:wght@300;400&display=swap');
+
+
+// STUFF FOR DYNAMIC SIZES
+
+// Breakpoint Size
+$size-breakpoint: 800px;
+
+/* MIXINS */
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width: $size-breakpoint) { @content; }
+    }
+    @else if $break == small {
+        @media (max-width: $size-breakpoint) { @content; }
+    } @else {
+        @media ($break) { @content; }
+    }
+}
+
+
 /* FONTS */
 $fonts-headline: 'Bebas Neue', arial, sans-serif;
 $fonts-body: Roboto, verdana, sans-serif;
